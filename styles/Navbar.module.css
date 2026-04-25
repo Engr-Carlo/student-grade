@@ -1,0 +1,91 @@
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbarContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: var(--primary-color);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.navMenu ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.navMenu a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navMenu a:hover {
+  color: var(--primary-color);
+}
+
+.navButtons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btnLogin {
+  background: transparent;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btnLogin:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btnSignup {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 0.6rem 1.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btnSignup:hover {
+  background-color: #4338ca;
+}
+
+@media (max-width: 768px) {
+  .navbarContainer {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .navMenu {
+    display: none;
+  }
+
+  .navButtons {
+    width: 100%;
+    justify-content: flex-end;
+  }
+}

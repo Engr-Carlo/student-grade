@@ -1,0 +1,28 @@
+/* ===========================
+   Global Styles
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #06b6d4;
+  --dark-color: #1f2937;
+  --light-color: #f3f4f6;
+  --text-color: #374151;
+  --border-color: #e5e7eb;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background-color: #fff;
+}
